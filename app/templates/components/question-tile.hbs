@@ -1,6 +1,9 @@
-{{#link-to 'question' question.id}}
-  <div class="jumbotron">
-    <h3>{{question.title}}</h3>
-    <h5>Asked by: {{question.author}}</h5>
-  </div>
-{{/link-to}}
+<ul>
+  {{#each question.answers as |answer|}}
+    <div>
+      <li>{{answer.contents}}</li>
+      <h5>Answer provided by: {{answer.author}}</h5>
+    </div>
+    <br>
+  {{/each}}
+</ul>
