@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+     apiKey: 'AIzaSyDv3d8r7hdC7ZNFdPX28ntE2g0XbTFH-zE',
+     authDomain: 'qanda-c59c4.firebaseapp.com',
+     databaseURL: 'https://qanda-c59c4.firebaseio.com',
+     storageBucket: 'qanda-c59c4.appspot.com',
+   },
     modulePrefix: 'java-script-week-3-review',
     environment: environment,
     baseURL: '/',
