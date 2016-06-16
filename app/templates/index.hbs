@@ -6,9 +6,11 @@
       <div class="jumbotron">
         <h3>{{question.title}}</h3>
         <h5>Asked by: {{question.author}}</h5>
+        <h5>Additional notes: {{question.notes}}</h5>
       </div>
     {{/link-to}}
+    {{update-question question=question update="update"}}
+    <hr>
   {{/each}}
 </ul>
-{{update-question title=title update="update"}}
 {{new-question save2="save3"}}

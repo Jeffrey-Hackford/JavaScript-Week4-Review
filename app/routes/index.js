@@ -13,14 +13,16 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-    update(title, params){
-      console.log("index", title);
+    update(question, params){
+      console.log("index", question);
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
-          title.set(key,params[key]);
+          console.log(question);
+          console.log(params);
+          question.set(key, params[key]);
         }
       });
-      title.save();
+      question.save();
       this.transitionTo('index');
     }
   }
