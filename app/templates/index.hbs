@@ -4,7 +4,7 @@
   {{#each model.questions as |question|}}
     {{#link-to 'question' question.id}}
       <div class="jumbotron">
-        <h3>{{number-of-answers question}} {{question.title}}</h3>
+        <h3>{{number-of-answers question}} {{added}} {{question.title}}</h3>
         <h5>Asked by: {{question.author}}</h5>
         <h5>Additional notes: {{question.notes}}</h5>
       </div>
