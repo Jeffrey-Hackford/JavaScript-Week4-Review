@@ -7,7 +7,7 @@
         <h3>{{number-of-answers question}} {{question.title}}</h3>
         <h5>Asked by: {{question.author}}</h5>
         <h5>Additional notes: {{question.notes}}</h5>
-        <h6>Total number of answers for this question: {{total-answers question=question}}</h6>
+        <h6>Total number of answers for this question: <p>{{total-answers question=question}}</p></h6>
       </div>
     {{/link-to}}
     {{update-question question=question update="update"}}
