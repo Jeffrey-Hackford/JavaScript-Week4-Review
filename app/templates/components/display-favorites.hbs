@@ -1,0 +1,7 @@
+<hr>
+<div class="container">
+  <h3>Here is your list of favorited questions:</h3>
+    {{#each favoriteQuestions.favoriteQuestions as |question|}}
+      <p>{{question.title}}</p>
+    {{/each}}
+</div>
