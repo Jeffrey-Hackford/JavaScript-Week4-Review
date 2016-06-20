@@ -1,8 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+
+  favoriteQuestions: Ember.inject.service(),
+
   updateQuestionForm: false,
   actions: {
+    addToFavorites(question) {
+      this.get('favoriteQuestions').add(question);
+    },
+
     showForm(){
       this.set('updateQuestionForm', true);
     },
